@@ -1,0 +1,6 @@
+int main(void)
+begin
+int b;
+b = 1;
+
+end

@@ -1,0 +1,9 @@
+int x;
+void main(void) 
+begin
+
+int A;
+
+A = 1 + 2;
+
+end

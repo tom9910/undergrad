@@ -1,0 +1,60 @@
+int A[100];
+int b[20];
+int global;
+void main(void) begin
+  int x[5];
+  int i;
+  int y;
+   i=0;
+  while i < 5 do
+   begin
+      write "enter X: ";
+      read x[i];
+      i = i + 1;
+   end
+
+    i=0;
+
+  while (i < 5) do
+   begin
+      write x[i] + x[i];
+      write "\n";
+      i = i + 1;
+   end
+   y = 0;
+   write "guess a number between 1-5: ";
+   read y;
+   while y != 2 do
+    begin
+      write "guess again ";
+	read y;
+    end
+   write "not false = ";
+   write not false;
+   write "\n";
+
+    if ((3 * 7 > 1) and (1 == 1)) then
+	begin
+	A[0] = 43;
+	A[1] = 11;
+	A[99] = 0;
+	
+	write A[0];
+	write A[1];
+	write A[99];
+    end
+   
+   write "\n";
+   write ((1 < 100) or (5 != 5));
+   
+   write "\n";
+   
+   b[A[1]] = 5;
+   write b[A[1]];
+   
+   global = b[A[1]];
+   
+   write "\n";
+   write global;
+   
+end

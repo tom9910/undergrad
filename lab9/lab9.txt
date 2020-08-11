@@ -1,0 +1,44 @@
+int main(int argh, char * argv[]){
+
+
+
+int i = 1;
+char s[100];
+FILE *fp;
+int found =0;
+
+while(i < argc){
+
+	if(strcmp(argv[i], "-d") == 0){
+
+		my debug = 1;
+    		i = i + 1;
+	}// if
+	else if (srtcmp(argv[i], "-o") = 0){
+		if(argc > i + 1) foundit= 1;
+		sprintf(s, "%s.asm", argv[i+1]);
+   		 i = i+2;
+	}// else if
+	else i = i + 1;
+
+}// pf while
+
+//now we want to open a file descriptor and use that var to write our open file
+	if(foundit == 0){
+		printf("-o argument is needed");
+		exit(1);
+		}
+	fp = fopen(s, "w");
+	if(fp == NULL){
+
+	printf("can not open file %s \n", s);
+	exit(1);
+	}// if not found
+
+	fprintf(fp, "Hello world\n");
+
+//code from google doc here
+		
+exit(1);
+
+}
